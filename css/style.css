@@ -367,6 +367,7 @@ a {
   border       : 1px solid #ececec;
   border-radius: 3px 3px 0 0;
   margin       : 30px 45px;
+  position     : relative;
 }
 
 .h1-resumo {
@@ -388,6 +389,30 @@ a {
   padding       : 15px;
   letter-spacing: 0.02em;
   color         : #5C5C5C;
+  position      : relative;
+}
+
+.p-parcial {
+  height  : 100px;
+  overflow: hidden;
+}
+
+.p-oculto {
+  display: none;
+}
+
+.btn-ver-mais {
+  font-family   : 'QuickSand', sans-serif;
+  font-size     : .875em;
+  font-weight   : 700;
+  line-height   : 21px;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+  color         : #ED7839;
+  position      : absolute;
+  right         : 10px;
+  bottom        : 5px;
+  cursor        : pointer;
 }
 
 /* DISCUSSÕES */
