@@ -19,28 +19,36 @@
 
 <body>
   <div class="grid-container">
-    <header class="header">
-      <p>Anais do Simpósio Latino Americano de Ciências de Alimentos </p>
-      <h1>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </h1>
-      <span>ISSN: 1234-5678</span>
+    <header class="header header-grid">
+      <div>
+        <p>Anais do Simpósio Latino Americano de Ciências de Alimentos </p>
+        <h1>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </h1>
+        <span>ISSN: 1234-5678</span>
+      </div>
 
-      <button>PT.BR</button>
+      <button class="btn-idioma">PT, BR</button>
 
       <div class="perfil">
-        <p>Bem vindo</p>
-        <p>alguem12@galoascience.com</p>
-        <!-- add imagem de perfil -->
+        <div>
+          <p>Bem vindo</p>
+          <p>alguem12@galoascience.com</p>
+        </div>
+
+        <div class="foto-perfil">
+          <img src="./img/foto-perfil.jpg" alt="foto-perfil">
+        </div>
       </div>
     </header>
 
     <section class="side-menu">
-      <div class="logo">
-        <h1>SLACA 2019</h1>
-      </div>
-      <!-- add imagem logo -->
+      <h1>SLACA 2019</h1>
 
-      <ul>
-        <li>Apresentações</li>
+      <div class="logo">
+        <img src="./img/logo-slaca-400x400.png" alt="logo-Slaca-13">
+      </div>
+
+      <ul class="menu-item">
+        <li>Apresentação</li>
         <li>Comitês</li>
         <li>Autores</li>
         <li>Eixos temáticos</li>
@@ -49,55 +57,69 @@
       </ul>
     </section>
 
-    <section class="content">
-      <h1 class="titulo-do-trabalho">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e
-        15 anos, do município de Campinas/SP </h1>
+    <section class="conteudo-container">
+      <div class="conteudo-grid">
 
-      <div class="buttons">
-        <button>Download</button>
-        <button>Favoritos</button>
-        <button>doi</button>
-      </div>
+        <h1 class="titulo-trabalho">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e
+          15 anos, do município de Campinas/SP </h1>
 
-      <h1>Como citar esse trabalho?</h1>
+        <div class="botoes-container">
+          <button id="btn-download">Download</button>
+          <button id="btn-favoritos">Favoritos</button>
+          <button id="btn-doi">doi</button>
+        </div>
 
-      <div class="video-overlay">
-        <!-- add vídeo overlay -->
-      </div>
+        <a id="link-citacao" href="/">Como citar esse trabalho?</a>
 
-      <div class="detalhes-do-trablaho">
-        <h1 class="titulo-detalhes">Detalhes</h1>
-        <p>Tipo de Apresentação: Pôster</p>
-        <p>Eixo temático: Alimentação e saúde (AS)</p>
-        <p>Palavras-chaves: Alimentos funcionais, alimentação escolar.</p>
+        <div class="video-overlay">
+          <!-- add vídeo overlay -->
+        </div>
 
-        <p>Autores:</p>
-        <p>Galileo Galilei¹</p>
-        <p>Berta Lange de Morretes²</p>
-        <p>Isaac Newton³</p>
-        <p>Cesar Lattes¹</p>
-        <p>Stephen Hawking⁴</p>
+        <div class="detalhes-container">
+          <h1 class="h1-detalhes">Detalhes</h1>
+          <ul class="lista-detalhes">
+            <li>Tipo de Apresentação: <span>Pôster</span></li>
+            <li>Eixo temático: <span>Alimentação e saúde (AS)</span></li>
+            <li>Palavras-chaves: <span>Alimentos funcionais, alimentação escolar.</span></li>
+          </ul>
 
-        <p>¹Universidade Estadual de Campinas</p>
-        <p>²Universidade de São Paulo</p>
-        <p>³Instituto Nacional de Pesquisas Espaciais</p>
-        <p>⁴Universidade Federal do Rio de Janeiro</p>
+
+          <h1 class="h1-autores">Autores:</h1>
+          <ul class="lista-autores">
+            <li>Galileo Galilei¹</li>
+            <li>Berta Lange de Morretes²</li>
+            <li>Isaac Newton³</li>
+            <li>Cesar Lattes¹</li>
+            <li>Stephen Hawking⁴</li>
+          </ul>
+
+          <ul class="lista-universidades">
+            <li>¹Universidade Estadual de Campinas</li>
+            <li>²Universidade de São Paulo</li>
+            <li>³Instituto Nacional de Pesquisas Espaciais</li>
+            <li>⁴Universidade Federal do Rio de Janeiro</li>
+          </ul>
+
+        </div>
       </div>
     </section>
 
     <section class="resumo">
-      <h1 class="titulo-resumo">Resumo</h1>
-      <p class="conteudo-resumo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor,
-        mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce
-        auctor
-        eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus
-        nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non
-        lorem.
-        Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus
-        condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in
-        sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl
-        accumsant...</p>
-      <a class="ver-mais">ver mais</a>
+      <div class="resumo-container">
+        <h1 class="h1-resumo">Resumo</h1>
+        <p class="p-resumo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis
+          auctor,
+          mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce
+          auctor
+          eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus
+          nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non
+          lorem.
+          Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus
+          condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in
+          sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl
+          accumsant...</p>
+        <a class="ver-mais">ver mais</a>
+      </div>
     </section>
 
     <section class="discussoes">
@@ -127,7 +149,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer class="rodape">
       <div class="logo">
         <!-- inserir logo -->
       </div>
@@ -136,6 +158,7 @@
     </footer>
   </div>
 
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
