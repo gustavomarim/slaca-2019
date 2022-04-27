@@ -393,7 +393,7 @@ a {
 }
 
 .p-parcial {
-  height  : 100px;
+  height  : 110px;
   overflow: hidden;
 }
 
@@ -411,13 +411,116 @@ a {
   color         : #ED7839;
   position      : absolute;
   right         : 10px;
-  bottom        : 5px;
+  bottom        : 10px;
   cursor        : pointer;
 }
 
 /* DISCUSSÕES */
 .discussoes {
   grid-column: 2;
+}
+
+.discussoes-container {
+  border       : 1px solid #ececec;
+  border-radius: 3px 3px 0 0;
+  margin       : 30px 45px;
+  position     : relative;
+}
+
+
+.h1-discussoes {
+  font-family: 'Roboto', sans-serif;
+  font-style : normal;
+  font-weight: 500;
+  font-size  : 20px;
+  line-height: 25px;
+  padding    : 10px 15px;
+  color      : #4E4E4E;
+  background : #FDF1EB;
+}
+
+.h2-discussoes {
+  font-family   : 'Roboto', sans-serif;
+  font-style    : normal;
+  font-weight   : 700;
+  font-size     : 1.125em;
+  line-height   : 21px;
+  color         : #ED7839;
+  text-align    : center;
+  padding-top   : 15px;
+  padding-bottom: 27px;
+}
+
+.icones {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  margin-bottom  : 35px;
+}
+
+.p-discussoes {
+  font-family  : 'Quicksand', sans-serif;
+  font-style   : normal;
+  font-weight  : 400;
+  font-size    : .875em;
+  line-height  : 19px;
+  max-width    : 90ch;
+  color        : #595959;
+  text-align   : center;
+  padding      : 0 216px;
+  margin-bottom: 60px;
+  position     : relative;
+}
+
+.p-discussoes::before {
+  content : '';
+  position: absolute;
+  width   : 1027px;
+  height  : 0px;
+  left    : 50px;
+  top     : 70px;
+  border  : 1px solid #E7E7E7;
+  z-index : 200;
+}
+
+.btn-criar-topico {
+  font-family  : 'Quicksand', sans-serif;
+  font-style   : normal;
+  font-weight  : 700;
+  font-size    : 1em;
+  line-height  : 16px;
+  padding      : 10px 15px;
+  text-align   : center;
+  color        : #FFFFFF;
+  background   : linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  box-shadow   : 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  border       : none;
+  position     : absolute;
+  right        : 45%;
+  top          : 53%;
+  z-index      : 300;
+  cursor       : pointer;
+}
+
+.discussoes label {
+  font-family  : 'Roboto', sans-serif;
+  display      : block;
+  font-style   : normal;
+  font-weight  : 700;
+  font-size    : 1em;
+  line-height  : 19px;
+  color        : #ED7839;
+  padding      : 0 18px;
+  margin-bottom: 2px;
+}
+
+.discussoes input {
+  background   : #FFFFFF;
+  border       : 1px solid #CCCCCC;
+  box-sizing   : border-box;
+  border-radius: 3px;
+  margin       : 0 18px 10px;
 }
 
 /* RODAPÉ */
