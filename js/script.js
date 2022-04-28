@@ -2,8 +2,6 @@ const btnVerMais = document.querySelector('.btn-ver-mais');
 
 const paragrafoOculto = document.querySelectorAll('.p-oculto');
 
-console.log(paragrafoOculto);
-
 function toggleResumo(event) {
   paragrafoOculto.forEach((paragrafo) => {
     paragrafo.classList.toggle('p-oculto');
