@@ -23,6 +23,7 @@
 
 .botoes-container {
   grid-column : 2;
+  display     : flex;
   gap         : 5px;
   justify-self: right;
 }
@@ -32,14 +33,62 @@
   font-weight  : 500;
   font-size    : 1em;
   line-height  : 19px;
-  padding      : 6px 12px;
   border       : none;
   border-radius: 4px;
   color        : #fff;
   background   : #ED7839;
+  padding      : 6px 12px;
 }
 
-#link-citacao {
+.botoes-container button:hover {
+  background: linear-gradient(180deg, #FFE654 0%, #EE7A3A 100%);
+}
+
+.btn-download {
+  width  : 120px;
+  height : 31px;
+  display: relative;
+}
+
+.btn-download::before {
+  content     : "";
+  background  : url("../img/conteudo/icone-download.svg"), no-repeat;
+  display     : inline-block;
+  width       : 18px;
+  height      : 16px;
+  margin-right: 5px;
+  display     : absolute;
+}
+
+.btn-favoritos {
+  width : 43px;
+  height: 31px;
+}
+
+.btn-favoritos::before {
+  content   : "";
+  background: url("../img/conteudo/icone-favorito.svg"), no-repeat;
+  display   : block;
+  width     : 18px;
+  height    : 17px;
+  display   : absolute;
+}
+
+.btn-doi {
+  width : 43px;
+  height: 31px;
+}
+
+.btn-doi::before {
+  content   : "";
+  background: url("../img/conteudo/icone-doi.svg"), no-repeat;
+  display   : block;
+  width     : 18px;
+  height    : 17px;
+  display   : absolute;
+}
+
+.link-citacao {
   grid-column   : 2;
   font-family   : 'Roboto', sans-serif;
   font-weight   : 500;
@@ -52,10 +101,60 @@
   margin-bottom : 10px;
 }
 
+.video-overlay {
+  background-image : url("../img/conteudo/video-overlay.png");
+  background-size  : contain;
+  background-repeat: no-repeat;
+  border-radius    : 3px;
+}
+
+.video-overlay h1 {
+  font-family   : 'Roboto', sans-serif;
+  font-style    : normal;
+  font-weight   : 900;
+  font-size     : 1.5em;
+  line-height   : 25px;
+  letter-spacing: 0.05em;
+  color         : #FFFFFF;
+  margin        : 35px 35px 222px 32px;
+}
+
+.video-overlay h2 {
+  font-family   : 'Roboto', sans-serif;
+  font-style    : normal;
+  font-weight   : 900;
+  font-size     : 2.125em;
+  line-height   : 25px;
+  letter-spacing: 0.05em;
+  color         : #FFFFFF;
+}
+
+.video-overlay span {
+  font-family   : 'Roboto', sans-serif;
+  font-style    : normal;
+  font-weight   : 900;
+  font-size     : 1.25em;
+  line-height   : 25px;
+  letter-spacing: 0.05em;
+  color         : #FFFFFF;
+}
+
+.display-overlay {
+  display    : flex;
+  align-items: center;
+  gap        : 17px;
+  margin     : 0 17px 52px 30px;
+}
+
+.display-overlay h2 {
+  margin-bottom: 5px;
+}
+
 .detalhes-container {
   border       : 1px solid #ECECEC;
   border-radius: 4px;
   position     : relative;
+  height       : 100%;
 }
 
 .detalhes-container::after {
@@ -73,7 +172,7 @@
   content      : '';
   position     : absolute;
   width        : 3px;
-  height       : 335px;
+  height       : 80%;
   right        : 8px;
   top          : 60px;
   background   : #E7E7E7;
@@ -99,13 +198,13 @@
 .lista-detalhes li {
   font-family   : 'QuickSand', sans-serif;
   font-weight   : 400;
-  font-size     : .75em;
+  font-size     : .875em;
   line-height   : 14px;
   letter-spacing: 0.02em;
   color         : #5C5C5C;
 }
 
-.lista-detalhes li span {
+.lista-detalhes>li span {
   font-family   : 'QuickSand', sans-serif;
   font-size     : .875em;
   line-height   : 16.8px;
@@ -117,7 +216,7 @@
 
 .lista-autores {
   padding      : 0 15px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .h1-autores {
@@ -127,7 +226,6 @@
   letter-spacing: 2%;
   color         : #5C5C5C;
   padding       : 0 15px;
-  margin-bottom : 10px;
 }
 
 .lista-autores li {
@@ -141,16 +239,15 @@
 }
 
 .lista-universidades {
-  padding      : 0 15px;
-  margin-bottom: 40px;
+  padding: 0 15px;
 }
 
 .lista-universidades li {
   font-family   : 'QuickSand', sans-serif;
   font-weight   : 400;
-  font-size     : .75em;
+  font-size     : .875em;
   line-height   : 12px;
   letter-spacing: 2%;
   color         : #ADA0A0;
-  margin-bottom : 6px;
+  padding-bottom: 10px;
 }

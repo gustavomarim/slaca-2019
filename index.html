@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="./css/style.css">
 
-  <!-- fonts -->
+  <!-- Tipografias -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -19,8 +19,8 @@
 
 <body>
   <div class="grid-container">
-    <header class="header header-grid">
-      <div>
+    <header class="header header-flex">
+      <div class="texto-header">
         <p>Anais do Simpósio Latino Americano de Ciências de Alimentos </p>
         <h1>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </h1>
         <span>ISSN: 1234-5678</span>
@@ -29,13 +29,13 @@
       <button class="btn-idioma">PT, BR</button>
 
       <div class="perfil">
-        <div>
+        <div class="login">
           <p>Bem vindo</p>
           <p>alguem12@galoascience.com</p>
         </div>
 
         <div class="foto-perfil">
-          <img src="./img/foto-perfil.jpg" alt="foto-perfil">
+          <img src="./img/header/icone-perfil.svg" alt="foto-perfil">
         </div>
       </div>
     </header>
@@ -44,7 +44,7 @@
       <h1>SLACA 2019</h1>
 
       <div class="logo">
-        <img src="./img/logo-slaca-400x400.png" alt="logo-Slaca-13">
+        <img src="./img/side-menu/logo-slaca-400x400.png" alt="logo 13º Slaca">
       </div>
 
       <ul class="menu-item">
@@ -64,15 +64,28 @@
           15 anos, do município de Campinas/SP </h1>
 
         <div class="botoes-container">
-          <button id="btn-download">Download</button>
-          <button id="btn-favoritos">Favoritos</button>
-          <button id="btn-doi">doi</button>
+          <button class="btn-download">Download</button>
+          <button class="btn-favoritos"></button>
+          <button class="btn-doi"></button>
         </div>
 
-        <a id="link-citacao" href="/">Como citar esse trabalho?</a>
+        <a class="link-citacao" href="/">Como citar esse trabalho?</a>
 
         <div class="video-overlay">
-          <!-- add vídeo overlay -->
+          <h1>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município
+            de Campinas/SP </h1>
+
+          <div class="display-overlay">
+            <div>
+              <img src="./img/conteudo/icone-imagem.svg" alt="">
+            </div>
+            <div>
+
+              <h2>Beatriz Christiane Melo</h2>
+              <span>FCA / Universidade Estadual de Campinas</span>
+            </div>
+          </div>
+
         </div>
 
         <div class="detalhes-container">
@@ -144,9 +157,11 @@
           <h2 class="h2-discussoes">Compartilhe suas ideias ou dúvidas com os autores!</h2>
 
           <div class="icones">
-            <p>icones aqui</p>
+            <img src="./img/discussoes/icone-1.svg" alt="">
+            <img src="./img/discussoes/icone-QA.svg" alt="">
+            <img src="./img/discussoes/icone-ideias.svg" alt="">
           </div>
-          <!-- inserir ícones Discussões -->
+
           <p class="p-discussoes">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade?
             Deixe seus
             questionamentos
@@ -191,7 +206,7 @@
     </section>
 
     <footer class="rodape">
-      <img src="./img/footer.svg" alt="logo galoá">
+      <img src="./img/footer/footer.svg" alt="logo galoá">
     </footer>
   </div>
 
