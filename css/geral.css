@@ -1,0 +1,33 @@
+body,
+h1,
+h2,
+ul,
+li,
+p,
+span,
+a {
+  margin : 0px;
+  padding: 0px;
+}
+
+img {
+  display  : block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.grid-container {
+  display              : grid;
+  grid-template-columns: 220px 1fr;
+}

@@ -1,0 +1,7 @@
+.rodape {
+  grid-column: 2;
+}
+
+.rodape img {
+  width: 100%;
+}

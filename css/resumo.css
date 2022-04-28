@@ -1,0 +1,57 @@
+/* RESUMO */
+.resumo {
+  grid-column: 2;
+}
+
+
+.resumo-container {
+  border       : 1px solid #ececec;
+  border-radius: 3px 3px 0 0;
+  margin       : 30px 45px;
+  position     : relative;
+}
+
+.h1-resumo {
+  font-family: 'Roboto', sans-serif;
+  font-style : normal;
+  font-weight: 500;
+  font-size  : 20px;
+  line-height: 25px;
+  padding    : 10px 15px;
+  color      : #4E4E4E;
+  background : #FDF1EB;
+}
+
+.p-resumo {
+  font-family   : 'QuickSand', sans-serif;
+  font-weight   : 400;
+  font-size     : .875em;
+  line-height   : 23px;
+  padding       : 15px;
+  letter-spacing: 0.02em;
+  color         : #5C5C5C;
+  position      : relative;
+}
+
+.p-parcial {
+  height  : 110px;
+  overflow: hidden;
+}
+
+.p-oculto {
+  display: none;
+}
+
+.btn-ver-mais {
+  font-family   : 'QuickSand', sans-serif;
+  font-size     : .875em;
+  font-weight   : 700;
+  line-height   : 21px;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+  color         : #ED7839;
+  position      : absolute;
+  right         : 10px;
+  bottom        : 10px;
+  cursor        : pointer;
+}

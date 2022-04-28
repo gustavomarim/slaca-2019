@@ -1,0 +1,156 @@
+.conteudo-container {
+  grid-column: 2;
+  padding    : 20px 43px;
+}
+
+.conteudo-grid {
+  display              : grid;
+  grid-template-columns: 3fr 1fr;
+  align-items          : center;
+
+  gap: 0 30px;
+}
+
+.titulo-trabalho {
+  grid-column   : 1;
+  font-family   : 'Roboto', sans-serif;
+  font-weight   : 900;
+  font-size     : 1.25em;
+  line-height   : 25px;
+  letter-spacing: 0.05em;
+  color         : #ED7839;
+}
+
+.botoes-container {
+  grid-column : 2;
+  gap         : 5px;
+  justify-self: right;
+}
+
+.botoes-container button {
+  font-family  : 'Roboto', sans-serif;
+  font-weight  : 500;
+  font-size    : 1em;
+  line-height  : 19px;
+  padding      : 6px 12px;
+  border       : none;
+  border-radius: 4px;
+  color        : #fff;
+  background   : #ED7839;
+}
+
+#link-citacao {
+  grid-column   : 2;
+  font-family   : 'Roboto', sans-serif;
+  font-weight   : 500;
+  font-size     : .875em;
+  line-height   : 25px;
+  letter-spacing: 0.05em;
+  color         : #ED7839;
+  text-align    : right;
+  text-transform: uppercase;
+  margin-bottom : 10px;
+}
+
+.detalhes-container {
+  border       : 1px solid #ECECEC;
+  border-radius: 4px;
+  position     : relative;
+}
+
+.detalhes-container::after {
+  content      : '';
+  position     : absolute;
+  width        : 3px;
+  height       : 200px;
+  right        : 8px;
+  top          : 60px;
+  background   : #BFBFBF;
+  border-radius: 5px;
+}
+
+.detalhes-container::before {
+  content      : '';
+  position     : absolute;
+  width        : 3px;
+  height       : 335px;
+  right        : 8px;
+  top          : 60px;
+  background   : #E7E7E7;
+  box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.h1-detalhes {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size  : 1.25em;
+  line-height: 25px;
+  color      : #4E4E4E;
+  padding    : 11px 15px 9px 15px;
+  background : #FDF1EB;
+}
+
+.lista-detalhes {
+  padding      : 15px;
+  margin-bottom: 20px;
+}
+
+.lista-detalhes li {
+  font-family   : 'QuickSand', sans-serif;
+  font-weight   : 400;
+  font-size     : .75em;
+  line-height   : 14px;
+  letter-spacing: 0.02em;
+  color         : #5C5C5C;
+}
+
+.lista-detalhes li span {
+  font-family   : 'QuickSand', sans-serif;
+  font-size     : .875em;
+  line-height   : 16.8px;
+  font-weight   : 700;
+  letter-spacing: 0.02em;
+  line-height   : 14.4px;
+  color         : #5C5C5C;
+}
+
+.lista-autores {
+  padding      : 0 15px;
+  margin-bottom: 30px;
+}
+
+.h1-autores {
+  font-family   : 'QuickSand', sans-serif;
+  font-size     : .875em;
+  font-weight   : 700;
+  letter-spacing: 2%;
+  color         : #5C5C5C;
+  padding       : 0 15px;
+  margin-bottom : 10px;
+}
+
+.lista-autores li {
+  font-family   : 'QuickSand', sans-serif;
+  font-weight   : 400;
+  font-size     : .875em;
+  line-height   : 12px;
+  letter-spacing: 2%;
+  color         : #5C5C5C;
+  margin-bottom : 10px;
+}
+
+.lista-universidades {
+  padding      : 0 15px;
+  margin-bottom: 40px;
+}
+
+.lista-universidades li {
+  font-family   : 'QuickSand', sans-serif;
+  font-weight   : 400;
+  font-size     : .75em;
+  line-height   : 12px;
+  letter-spacing: 2%;
+  color         : #ADA0A0;
+  margin-bottom : 6px;
+}
