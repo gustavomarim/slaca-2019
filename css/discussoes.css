@@ -4,7 +4,7 @@
   margin-bottom: 50px;
 }
 
-.discussoes::before {
+/* .discussoes::before {
   content : '';
   position: absolute;
   width   : 1027px;
@@ -13,13 +13,13 @@
   top     : 263px;
   border  : 1px solid #E7E7E7;
   z-index : 200;
-}
+} */
 
 .discussoes-container {
-  border       : 1px solid #ececec;
-  border-radius: 3px 3px 0 0;
-  margin       : 30px 45px;
-  position     : relative;
+  border          : 1px solid #ececec;
+  border-radius   : 3px 3px 0 0;
+  margin          : 30px 45px;
+  /* position     : relative; */
 }
 
 .h1-discussoes {
@@ -62,10 +62,16 @@
   line-height  : 19px;
   max-width    : 90ch;
   color        : #595959;
+  margin       : 0 auto;
+  margin-bottom: 15px;
   text-align   : center;
-  padding      : 0 216px;
-  margin-bottom: 120px;
-  position     : relative;
+}
+
+.criar-topico {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  margin-bottom  : 15px;
 }
 
 .btn-criar-topico {
@@ -76,37 +82,17 @@
   line-height  : 16px;
   padding      : 10px 15px;
   text-align   : center;
+  border-radius: 4px;
+  cursor       : pointer;
   color        : #FFFFFF;
   background   : linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
   box-shadow   : 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
-  border-radius: 4px;
   border       : none;
-  position     : absolute;
-  right        : 45%;
-  top          : 215px;
-  z-index      : 300;
-  cursor       : pointer;
 }
 
-/* .discussoes label {
-  font-family  : 'Roboto', sans-serif;
-  display      : block;
-  font-style   : normal;
-  font-weight  : 700;
-  font-size    : 1em;
-  line-height  : 19px;
-  color        : #ED7839;
-  padding      : 0 18px;
-  margin-bottom: 2px;
+.btn-criar-topico:hover {
+  background: #ED7839;
 }
-
-.discussoes input {
-  background   : #FFFFFF;
-  border       : 1px solid #CCCCCC;
-  box-sizing   : border-box;
-  border-radius: 3px;
-  margin       : 0 18px 10px;
-} */
 
 .pergunta {
   background   : #FFFFFF;
@@ -159,4 +145,100 @@
   font-size  : .875em;
   line-height: 19px;
   color      : #757575;
+}
+
+/* FORM OCULTO */
+.form-criar-topico {
+  /* colocar como NONE */
+  display: none;
+  padding: 0 16px 0 18px;
+}
+
+.form-criar-topico-oculto {
+  display: block;
+}
+
+form p {
+  margin-bottom: 22px;
+}
+
+label {
+  display    : block;
+  font-family: 'Roboto', sans-serif;
+  font-style : normal;
+  font-weight: 700;
+  font-size  : 1em;
+  line-height: 19px;
+  color      : #ED7839;
+}
+
+input {
+  border    : 1px solid #CCCCCC;
+  box-sizing: border-box;
+  width     : 100%;
+}
+
+input::placeholder {
+  font-family: 'Quicksand', sans-serif;
+  font-style : normal;
+  font-weight: 400;
+  font-size  : .875em;
+  line-height: 18px;
+  padding    : 10px 0 10px 23px;
+  color      : #4D4D4D;
+}
+
+#assunto {
+  height       : 40px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+#conteudo {
+  border-radius: 3px 3px 0 0;
+  height       : 80px;
+}
+
+.barra-de-tarefas {
+  display        : flex;
+  justify-content: space-between;
+  background     : #EAF1F2;
+  border         : 1px solid #CCCCCC;
+  box-sizing     : border-box;
+  border-radius  : 0px 0px 4px 4px;
+  height         : 30px;
+}
+
+.barra-de-tarefas>div {
+  display        : flex;
+  gap            : 31px;
+  justify-content: center;
+  align-items    : center;
+  margin-left    : 29px;
+}
+
+.barra-de-tarefas img {
+  width  : 15px;
+  height : 12px;
+  cursor : pointer;
+  padding: 8px;
+}
+
+.barra-de-tarefas button {
+  font-family  : 'Quicksand', sans-serif;
+  font-style   : normal;
+  font-weight  : 700;
+  font-size    : 1em;
+  line-height  : 16px;
+  text-align   : center;
+  color        : #FFFFFF;
+  width        : 205px;
+  height       : 100%;
+  background   : linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+  border-radius: 0px 0px 4px 0px;
+  border       : none;
+}
+
+.barra-de-tarefas button:hover {
+  background: #ED7839;
 }

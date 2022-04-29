@@ -10,3 +10,10 @@ function toggleResumo(event) {
 }
 
 btnVerMais.addEventListener('click', toggleResumo);
+
+const btnCriarTopico = document.querySelector('.btn-criar-topico');
+
+btnCriarTopico.addEventListener('click', () => {
+  const form = document.querySelector('.form-criar-topico');
+  form.classList.toggle('form-criar-topico-oculto');
+});
