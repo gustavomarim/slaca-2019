@@ -103,6 +103,10 @@
   margin       : 17px 15px;
 }
 
+.pergunta:nth-last-child(1) .icones-pergunta:nth-last-child(1) span:nth-child(3) {
+  cursor: pointer;
+}
+
 .pergunta h1 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
@@ -241,4 +245,93 @@ input::placeholder {
 
 .barra-de-tarefas button:hover {
   background: #ED7839;
+}
+
+.resposta-accordion span {
+  font-family: 'Quicksand';
+  font-style : normal;
+  font-weight: 700;
+  font-size  : .875em;
+  line-height: 18px;
+  color      : #ED7839;
+}
+
+.topico-aberto {
+  /* display: none; */
+}
+
+.topico-accordion {
+  /* Colocar como NONE */
+  /* display: none; */
+}
+
+.resposta-accordion {
+  border-top: 1px solid #E7E7E7;
+}
+
+.resposta-accordion>div {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.resposta-accordion h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-style : normal;
+  font-weight: 700;
+  font-size  : .75em;
+  line-height: 15px;
+  padding    : 18px 0 10px 23px;
+  color      : #5C5C5C;
+}
+
+.resposta-accordion span {
+  font-family : 'Quicksand', sans-serif;
+  font-style  : normal;
+  font-weight : 700;
+  font-size   : .875em;
+  line-height : 18px;
+  color       : #ED7839;
+  margin-right: 23px;
+  position    : relative;
+}
+
+.autor::after {
+  content          : "";
+  background       : url("../img/discussoes/icone-resposta.svg");
+  background-repeat: no-repeat;
+  display          : inline-block;
+  width            : 31px;
+  height           : 22px;
+  margin-left      : 33px;
+  display          : absolute;
+}
+
+.coautor::after {
+  content          : "";
+  background       : url("../img/discussoes/icone-resposta.svg");
+  background-repeat: no-repeat;
+  display          : inline-block;
+  width            : 31px;
+  height           : 22px;
+  margin-left      : 13px;
+  display          : absolute;
+}
+
+.resposta-accordion p {
+  font-family: 'Quicksand', sans-serif;
+  font-style : normal;
+  font-weight: 400;
+  font-size  : .875em;
+  line-height: 18px;
+  color      : #4D4D4D;
+}
+
+.resposta-accordion p:last-child {
+  padding-bottom: 35px;
+  margin-bottom : 0;
+}
+
+.background-cinza {
+  background: #F8F8F8;
 }
