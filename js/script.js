@@ -17,3 +17,18 @@ btnCriarTopico.addEventListener('click', () => {
   const form = document.querySelector('.form-criar-topico');
   form.classList.toggle('form-criar-topico-oculto');
 });
+
+const topicoAberto = document.querySelector('.topico-aberto');
+const topicoAccordion = document.querySelector('.topico-accordion');
+const abrirTopico = document.querySelector('.accordion');
+// implementar lógica para abrir o topico
+
+abrirTopico.addEventListener('click', () => {
+  topicoAberto.classList.toggle('display-none');
+  topicoAccordion.classList.toggle('display-none');
+});
+
+topicoAccordion.addEventListener('click', () => {
+  topicoAberto.classList.toggle('display-none');
+  topicoAccordion.classList.toggle('display-none');
+});

@@ -256,15 +256,6 @@ input::placeholder {
   color      : #ED7839;
 }
 
-.topico-aberto {
-  /* display: none; */
-}
-
-.topico-accordion {
-  /* Colocar como NONE */
-  /* display: none; */
-}
-
 .resposta-accordion {
   border-top: 1px solid #E7E7E7;
 }
@@ -334,4 +325,16 @@ input::placeholder {
 
 .background-cinza {
   background: #F8F8F8;
+}
+
+.display-none {
+  display: none;
+}
+
+.accordion {
+  cursor: pointer;
+}
+
+.topico-accordion {
+  cursor: pointer;
 }
